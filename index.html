@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ride Sharing App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places" defer></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <script src="scripts/firebase-config.js" defer></script>
+  <script src="scripts/app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🚗 Ride Sharing App</h1>
+  </header>
+
+  <main>
+    <div id="map"></div>
+    <div class="controls">
+      <button onclick="requestRide()">Request Ride</button>
+      <p id="status">Waiting for location...</p>
+      <div id="driver-info"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Internship Project by CodTech</p>
+  </footer>
+</body>
+</html>
